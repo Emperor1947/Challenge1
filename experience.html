@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Experience - TravelWorld</title>
+    <link rel="stylesheet" href="experience.css">
+</head>
+<body>
+    <!-- Animated Background Images -->
+    <div class="background-images">
+        <div class="bg-image" style="background-image: url('images1.jpeg');"></div>
+        <div class="bg-image" style="background-image: url('images2.jpeg');"></div>
+        <div class="bg-image" style="background-image: url('images3.jpeg');"></div>
+        <div class="bg-image" style="background-image: url('images4.jpeg');"></div>
+        <div class="bg-image" style="background-image: url('images5.jpeg');"></div>
+        <div class="bg-image" style="background-image: url('images6.jpeg');"></div>
+        <div class="bg-image" style="background-image: url('images7.jpeg');"></div>
+        <div class="bg-image" style="background-image: url('images8.jpeg');"></div>
+    </div>
+
+    <!-- Dark Overlay -->
+    <div class="dark-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-logo">TravelWorld</div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="experience.html" class="active">Experiences</a>
+            <a href="gallery">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="content-wrapper">
+            <h1 class="main-title">Share Your Journey</h1>
+            <p class="main-subtitle">Your experiences inspire others to explore the world</p>
+            
+            <button class="share-experience-btn" id="openExperienceBtn">
+                <span class="btn-icon">✨</span>
+                Share Your Experience
+                <span class="btn-icon">✨</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Experience Popup Modal -->
+    <div class="experience-popup-overlay" id="experiencePopup">
+        <div class="experience-popup-box">
+            <button class="close-popup-btn" id="closePopupBtn">&times;</button>
+            
+            <div class="popup-header">
+                <div class="popup-icon">🌍</div>
+                <h2 class="popup-title">What's Your Experience?</h2>
+                <p class="popup-description">Share your travel story with the world</p>
+            </div>
+
+            <form class="experience-form" id="experienceForm">
+                <div class="form-group">
+                    <label for="userName">Your Name</label>
+                    <input 
+                        type="text" 
+                        id="userName" 
+                        name="userName" 
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Select a destination</option>
+                        <option value="kashmir">Kashmir</option>
+                        <option value="goa">Goa</option>
+                        <option value="darjeeling">Darjeeling</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="north-sikkim">North Sikkim</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <div class="star-rating" id="starRating">
+                        <span class="star" data-rating="1">★</span>
+                        <span class="star" data-rating="2">★</span>
+                        <span class="star" data-rating="3">★</span>
+                        <span class="star" data-rating="4">★</span>
+                        <span class="star" data-rating="5">★</span>
+                    </div>
+                    <input type="hidden" id="rating" name="rating" value="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Your Experience</label>
+                    <textarea 
+                        id="experience" 
+                        name="experience" 
+                        rows="6" 
+                        placeholder="Tell us about your amazing journey..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span class="submit-icon">🚀</span>
+                    Submit Experience
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Message Popup -->
+    <div class="success-popup" id="successPopup">
+        <div class="success-box">
+            <div class="success-icon">✓</div>
+            <h2>Thank You!</h2>
+            <p>Your experience has been shared successfully</p>
+            <button class="success-close-btn" id="successCloseBtn">Close</button>
+        </div>
+    </div>
+
+    <script src="experience.js"></script>
+</body>
+</html>

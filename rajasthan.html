@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajasthan - Land of Kings</title>
+    <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="background-gradient"></div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-logo">TravelWorld</div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="experience.html">Experiences</a>
+            <a href="gallery">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <div class="page-header">
+        <h1 class="page-title">Explore Rajasthan</h1>
+        <p class="page-subtitle">Land of Kings & Deserts - Discover royal heritage</p>
+    </div>
+
+    <!-- Destinations Container -->
+    <div class="destinations-container">
+        <!-- Jaipur Card -->
+        <div class="destination-card" data-place="jaipur">
+            <div class="card-image" style="background-image: url('Jaipur.jpg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h2 class="destination-name">Jaipur</h2>
+                <p class="destination-tagline">The Pink City</p>
+                <button class="suggest-btn" onclick="showPopup('perfect')">Suggest This Place</button>
+            </div>
+            <div class="floating-particles"></div>
+        </div>
+
+        <!-- City Palace Card -->
+        <div class="destination-card" data-place="city-palace">
+            <div class="card-image" style="background-image: url('City Palace.jpg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h2 class="destination-name">City Palace</h2>
+                <p class="destination-tagline">Royal Residence</p>
+                <button class="suggest-btn" onclick="showPopup('notimpressed')">Suggest This Place</button>
+            </div>
+            <div class="floating-particles"></div>
+        </div>
+
+        <!-- Ranthambore Card -->
+        <div class="destination-card" data-place="ranthambore">
+            <div class="card-image" style="background-image: url('Ranthambore.jpg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h2 class="destination-name">Ranthambore</h2>
+                <p class="destination-tagline">Tiger's Kingdom</p>
+                <button class="suggest-btn" onclick="showPopup('perfect')">Suggest This Place</button>
+            </div>
+            <div class="floating-particles"></div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+            <div class="popup-icon" id="popupIcon"></div>
+            <h2 class="popup-title" id="popupTitle"></h2>
+            <p class="popup-message" id="popupMessage"></p>
+            <button class="popup-close" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="destinations.js"></script>
+    <script src="suggest.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashmir - Paradise on Earth</title>
+    <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="background-gradient"></div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-logo">TravelWorld</div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="experience.html">Experiences</a>
+            <a href="#gallery">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <div class="page-header">
+        <h1 class="page-title">Explore Kashmir</h1>
+        <p class="page-subtitle">Paradise on Earth - Discover the beauty of Kashmir</p>
+    </div>
+
+    <!-- Destinations Container -->
+    <div class="destinations-container">
+        <!-- Dal Lake Card -->
+        <div class="destination-card" data-place="dal-lake">
+            <div class="card-image" style="background-image: url('dal lake.jpg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h2 class="destination-name">Dal Lake</h2>
+                <p class="destination-tagline">Jewel of Srinagar</p>
+                <button class="suggest-btn" onclick="showPopup('perfect')">Suggest This Place</button>
+            </div>
+            <div class="floating-particles"></div>
+        </div>
+
+        <!-- Mughal Gardens Card -->
+        <div class="destination-card" data-place="mughal-gardens">
+            <div class="card-image" style="background-image: url('Mughal Gardens.jpg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h2 class="destination-name">Mughal Gardens</h2>
+                <p class="destination-tagline">Royal Paradise</p>
+                <button class="suggest-btn" onclick="showPopup('perfect')">Suggest This Place</button>
+            </div>
+            <div class="floating-particles"></div>
+        </div>
+
+        <!-- Gulmarg Card -->
+        <div class="destination-card" data-place="gulmarg">
+            <div class="card-image" style="background-image: url('Gulmarg.jpg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h2 class="destination-name">Gulmarg</h2>
+                <p class="destination-tagline">Meadow of Flowers</p>
+                <button class="suggest-btn" onclick="showPopup('notimpressed')">Suggest This Place</button>
+            </div>
+            <div class="floating-particles"></div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+            <div class="popup-icon" id="popupIcon"></div>
+            <h2 class="popup-title" id="popupTitle"></h2>
+            <p class="popup-message" id="popupMessage"></p>
+            <button class="popup-close" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="destinations.js"></script>
+    <script src="suggest.js"></script>
+</body>
+</html>

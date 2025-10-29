@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darjeeling - Queen of the Hills</title>
+    <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="background-gradient"></div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-logo">TravelWorld</div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="experience.html">Experiences</a>
+            <a href="gallery">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <div class="page-header">
+        <h1 class="page-title">Explore Darjeeling</h1>
+        <p class="page-subtitle">Queen of the Hills - Experience the tea gardens</p>
+    </div>
+
+    <!-- Destinations Container -->
+    <div class="destinations-container">
+        <!-- Tiger Hill Card -->
+        <div class="destination-card" data-place="tiger-hill">
+            <div class="card-image" style="background-image: url('Tiger Hill.jpeg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h2 class="destination-name">Tiger Hill</h2>
+                <p class="destination-tagline">Sunrise Point</p>
+                <button class="suggest-btn" onclick="showPopup('perfect')">Suggest This Place</button>
+            </div>
+            <div class="floating-particles"></div>
+        </div>
+
+        <!-- Darjeeling Himalayan Railway Card -->
+        <div class="destination-card" data-place="toy-train">
+            <div class="card-image" style="background-image: url('Darjeeling Himalayan Railway.jpg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h2 class="destination-name">Himalayan Railway</h2>
+                <p class="destination-tagline">Toy Train Ride</p>
+                <button class="suggest-btn" onclick="showPopup('perfect')">Suggest This Place</button>
+            </div>
+            <div class="floating-particles"></div>
+        </div>
+
+        <!-- Japanese Peace Pagoda Card -->
+        <div class="destination-card" data-place="peace-pagoda">
+            <div class="card-image" style="background-image: url('Japanese Peace Pagoda.jpg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h2 class="destination-name">Peace Pagoda</h2>
+                <p class="destination-tagline">Serenity Temple</p>
+                <button class="suggest-btn" onclick="showPopup('notimpressed')">Suggest This Place</button>
+            </div>
+            <div class="floating-particles"></div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+            <div class="popup-icon" id="popupIcon"></div>
+            <h2 class="popup-title" id="popupTitle"></h2>
+            <p class="popup-message" id="popupMessage"></p>
+            <button class="popup-close" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="destinations.js"></script>
+    <script src="suggest.js"></script>
+</body>
+</html>

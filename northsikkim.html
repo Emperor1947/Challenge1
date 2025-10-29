@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Sikkim - Himalayan Wonder</title>
+    <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="background-gradient"></div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-logo">TravelWorld</div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="experience.html">Experiences</a>
+            <a href="gallery">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <div class="page-header">
+        <h1 class="page-title">Explore North Sikkim</h1>
+        <p class="page-subtitle">Himalayan Wonder - Discover pristine mountain beauty</p>
+    </div>
+
+    <!-- Destinations Container -->
+    <div class="destinations-container">
+        <!-- Gurudongmar Lake Card -->
+        <div class="destination-card" data-place="gurudongmar">
+            <div class="card-image" style="background-image: url('Gurudongmar Lake.webp');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h2 class="destination-name">Gurudongmar Lake</h2>
+                <p class="destination-tagline">Sacred High Altitude</p>
+                <button class="suggest-btn" onclick="showPopup('perfect')">Suggest This Place</button>
+            </div>
+            <div class="floating-particles"></div>
+        </div>
+
+        <!-- Yumthang Valley Card -->
+        <div class="destination-card" data-place="yumthang">
+            <div class="card-image" style="background-image: url('Yumthang Valley.webp');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h2 class="destination-name">Yumthang Valley</h2>
+                <p class="destination-tagline">Valley of Flowers</p>
+                <button class="suggest-btn" onclick="showPopup('perfect')">Suggest This Place</button>
+            </div>
+            <div class="floating-particles"></div>
+        </div>
+
+        <!-- Zero Point Card -->
+        <div class="destination-card" data-place="zero-point">
+            <div class="card-image" style="background-image: url('Zero Point.jpg');"></div>
+            <div class="card-overlay"></div>
+            <div class="card-content">
+                <h2 class="destination-name">Zero Point</h2>
+                <p class="destination-tagline">Last Frontier</p>
+                <button class="suggest-btn" onclick="showPopup('notimpressed')">Suggest This Place</button>
+            </div>
+            <div class="floating-particles"></div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+            <div class="popup-icon" id="popupIcon"></div>
+            <h2 class="popup-title" id="popupTitle"></h2>
+            <p class="popup-message" id="popupMessage"></p>
+            <button class="popup-close" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="destinations.js"></script>
+    <script src="suggest.js"></script>
+</body>
+</html>

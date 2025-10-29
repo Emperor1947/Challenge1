@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Explorer</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Background Image Carousel (Same as index) -->
+    <div class="background-carousel">
+        <div class="carousel-item active"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+    </div>
+
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">TravelExplorer</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#about">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Contact Form Popup -->
+    <div class="contact-popup" id="contactPopup">
+        <div class="contact-box">
+            <h2 class="contact-title">Get In Touch</h2>
+            <p class="contact-subtitle">We'd love to hear from you! Fill out the form below.</p>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email Address</label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="phone">Phone Number</label>
+                </div>
+                
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Message with Hint -->
+    <div class="success-popup" id="successPopup" style="display: none;">
+        <div class="success-box">
+            <div class="success-icon">✓</div>
+            <h2 class="success-title">Message Sent Successfully!</h2>
+            <p class="success-text">Thank you for contacting us. We'll get back to you soon.</p>
+            
+            <div class="hint-container">
+                <div class="hint-icon">💡</div>
+                <p class="hint-text">Hint: Try to find these places on Maps to plan your perfect journey!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

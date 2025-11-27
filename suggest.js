@@ -9,7 +9,7 @@ function showPopup(type) {
         icon.innerHTML = '✓';
         icon.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
         title.textContent = 'Perfect Choice!';
-        message.textContent = 'Excellent! This destination is highly recommended for you. Get ready for an amazing experience!';
+        message.textContent = 'Excellent! This destination flag(part 5) -xfYXNfSW5kaWF9 ,is highly recommended for you. Get ready for an amazing experience!';
     } else if (type === 'notimpressed') {
         icon.innerHTML = '!';
         icon.style.background = 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)';

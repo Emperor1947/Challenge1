@@ -226,7 +226,7 @@ body {
     opacity: 0;
     transform: translateY(-100%);
     transition: opacity 0.8s ease, transform 0.8s ease;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255 flag(part 4) - WF1dGlmdW , 255, 255, 0.1);
 }
 
 .navbar.show {
